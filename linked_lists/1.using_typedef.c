@@ -19,7 +19,7 @@ Node *createNode(int data) {
 
 int main() {
     Node *head = NULL, *temp = NULL; // Start with an empty list
-    int choice = 1, data;
+    int choice = 1, data, count;
 
     while (choice) {
         printf("Enter Data: ");
@@ -36,14 +36,21 @@ int main() {
         printf("Do you want to continue? (1 for Yes / 0 for No): ");
         scanf("%d", &choice); // Ask the user if they want to continue
     }
+    //separate lines
+    printf("\n");
 
+    // Print the linked list
     printf("Linked List: ");
     temp = head; // Start from the head of the list
     while (temp != NULL) { // Traverse until the end
         printf("%d -> ", temp->data); // Print the data of the current node
         temp = temp->next; // Move to the next node
+        count++;
     }
     printf("NULL\n"); // Indicate the end of the list
+    
+    printf("Number of nodes: %d\n", count);// Print the number of nodes
+
 
     return 0;
 }
