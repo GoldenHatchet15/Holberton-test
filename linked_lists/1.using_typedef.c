@@ -34,7 +34,7 @@ int main() {
         }
 
         printf("Do you want to continue? (1 for Yes / 0 for No): ");
-        scanf("%d", &choice); // Ask the user if they want to continue
+        scanf("%d", &choice); //ls Ask the user if they want to continue
     }
     //separate lines
     printf("\n");
